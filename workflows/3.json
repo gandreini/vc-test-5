@@ -1,0 +1,48 @@
+{
+  "active": false,
+  "id": "3",
+  "name": "WF3",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "ab6e2f4b-b28d-49f3-9d5f-62c2d5404ce1",
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        580,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "upload"
+      },
+      "id": "b74e5848-fde1-4896-a9a4-173d17169389",
+      "name": "FTP",
+      "type": "n8n-nodes-base.ftp",
+      "typeVersion": 1,
+      "position": [
+        800,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "When clicking \"Execute Workflow\"": {
+      "main": [
+        [
+          {
+            "node": "FTP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "triggerCount": 0,
+  "owner": "hello@mondo.surf",
+  "versionId": "50d9f205-2388-47b5-bfd5-84e2395d62fa"
+}
