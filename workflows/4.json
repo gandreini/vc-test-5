@@ -26,6 +26,19 @@
         800,
         300
       ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "a09cc924-9328-48e8-ab28-b96591b79f6d",
+      "name": "Set",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        1020,
+        300
+      ]
     }
   ],
   "connections": {
@@ -39,10 +52,21 @@
           }
         ]
       ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Set",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {},
   "triggerCount": 0,
   "owner": "hello@mondo.surf",
-  "versionId": "7accbe3b-6b87-4f7a-a4ad-92688eeaea8e"
+  "versionId": "082aea31-9ea4-46c6-b0f0-7b30d6e4a1f5"
 }
