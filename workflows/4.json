@@ -1,29 +1,16 @@
 {
   "active": false,
-  "id": "2",
-  "name": "WF2",
+  "id": "4",
+  "name": "WF4",
   "nodes": [
     {
       "parameters": {},
-      "id": "ed8d8d6b-5516-466a-a51f-888938960c7e",
+      "id": "796a50be-0798-4a29-8074-a0bd6c6beb0e",
       "name": "When clicking \"Execute Workflow\"",
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        640,
-        300
-      ]
-    },
-    {
-      "parameters": {
-        "operation": "subtractFromDate"
-      },
-      "id": "947cfdad-76a9-410d-9a3d-f83a8551b101",
-      "name": "Date & Time",
-      "type": "n8n-nodes-base.dateTime",
-      "typeVersion": 2,
-      "position": [
-        860,
+        580,
         300
       ]
     },
@@ -31,29 +18,18 @@
       "parameters": {
         "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
       },
-      "id": "20dec648-29de-4150-b368-0979dc08c887",
+      "id": "a5ff0602-c95e-478f-b220-eae9a3a3d2b5",
       "name": "Code",
       "type": "n8n-nodes-base.code",
       "typeVersion": 1,
       "position": [
-        1080,
+        800,
         300
       ]
     }
   ],
   "connections": {
     "When clicking \"Execute Workflow\"": {
-      "main": [
-        [
-          {
-            "node": "Date & Time",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Date & Time": {
       "main": [
         [
           {
@@ -68,5 +44,5 @@
   "settings": {},
   "triggerCount": 0,
   "owner": "hello@mondo.surf",
-  "versionId": "0eb196df-9976-4328-b931-0387c62d3f90"
+  "versionId": "7accbe3b-6b87-4f7a-a4ad-92688eeaea8e"
 }

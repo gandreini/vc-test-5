@@ -26,6 +26,19 @@
         800,
         300
       ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
+      },
+      "id": "d47d9482-1527-4d98-9126-d4bf97431267",
+      "name": "Code",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        1020,
+        300
+      ]
     }
   ],
   "connections": {
@@ -39,10 +52,21 @@
           }
         ]
       ]
+    },
+    "FTP": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {},
   "triggerCount": 0,
   "owner": "hello@mondo.surf",
-  "versionId": "50d9f205-2388-47b5-bfd5-84e2395d62fa"
+  "versionId": "92f19d89-c0d3-46b6-a423-03a3b47b7604"
 }

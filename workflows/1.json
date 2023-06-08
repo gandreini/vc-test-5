@@ -13,11 +13,36 @@
         960,
         440
       ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
+      },
+      "id": "8d85ad46-3b98-49fb-bff9-d96f88e64afa",
+      "name": "Code",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        1180,
+        440
+      ]
     }
   ],
-  "connections": {},
+  "connections": {
+    "When clicking \"Execute Workflow\"": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
   "settings": {},
   "triggerCount": 0,
   "owner": "hello@mondo.surf",
-  "versionId": "2b032aca-a718-4125-9490-bdcafdc297d4"
+  "versionId": "311e5fe2-342d-466d-bc90-5f01bcbe2c8f"
 }
