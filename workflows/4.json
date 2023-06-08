@@ -39,6 +39,24 @@
         1020,
         300
       ]
+    },
+    {
+      "parameters": {
+        "mergeByFields": {
+          "values": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "b23dd902-1a10-416b-a59b-6f33a8e5d221",
+      "name": "Compare Datasets",
+      "type": "n8n-nodes-base.compareDatasets",
+      "typeVersion": 2.2,
+      "position": [
+        1240,
+        300
+      ]
     }
   ],
   "connections": {
@@ -63,10 +81,21 @@
           }
         ]
       ]
+    },
+    "Set": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {},
   "triggerCount": 0,
-  "owner": "hello@mondo.surf",
-  "versionId": "082aea31-9ea4-46c6-b0f0-7b30d6e4a1f5"
+  "owner": "g.andreini@gmail.com",
+  "versionId": "eaedd0b3-96e5-44a6-ae5e-82d33dd9c1f4"
 }
