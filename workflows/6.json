@@ -1,0 +1,72 @@
+{
+  "active": false,
+  "id": "6",
+  "name": "WF6",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "2d11c31c-3797-486d-b4e1-b085d0b0ce8d",
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        580,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "additionalOptions": {}
+      },
+      "id": "f938a6df-086b-4124-86e7-ee6e30defa0b",
+      "name": "Rename Keys",
+      "type": "n8n-nodes-base.renameKeys",
+      "typeVersion": 1,
+      "position": [
+        800,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "subtractFromDate"
+      },
+      "id": "7ddf6b65-05c5-4a34-9ced-7f9bebd2c49c",
+      "name": "Date & Time",
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        1000,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "When clicking \"Execute Workflow\"": {
+      "main": [
+        [
+          {
+            "node": "Rename Keys",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rename Keys": {
+      "main": [
+        [
+          {
+            "node": "Date & Time",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "triggerCount": 0,
+  "owner": "hello@mondo.surf",
+  "versionId": "b8d367e2-396d-4518-9a2c-d2045ac5a77a"
+}

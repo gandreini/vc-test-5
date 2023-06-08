@@ -26,6 +26,17 @@
         1180,
         440
       ]
+    },
+    {
+      "parameters": {},
+      "id": "df58dc35-2f32-4bb5-a948-4cb8c7f7e9ce",
+      "name": "Merge",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 2.1,
+      "position": [
+        1420,
+        460
+      ]
     }
   ],
   "connections": {
@@ -39,10 +50,21 @@
           }
         ]
       ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {},
   "triggerCount": 0,
-  "owner": "g.andreini@gmail.com",
-  "versionId": "311e5fe2-342d-466d-bc90-5f01bcbe2c8f"
+  "owner": "hello@mondo.surf",
+  "versionId": "6ee737d3-fa2a-4c66-a4d6-d9a3d7e423df"
 }
