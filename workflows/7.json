@@ -1,0 +1,48 @@
+{
+  "active": false,
+  "id": "7",
+  "name": "WF7",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "2c9361de-746e-4ed5-b23e-9769634eefa4",
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        580,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "additionalOptions": {}
+      },
+      "id": "2c360b09-5b00-4794-9d72-01e602c54037",
+      "name": "Rename Keys",
+      "type": "n8n-nodes-base.renameKeys",
+      "typeVersion": 1,
+      "position": [
+        800,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "When clicking \"Execute Workflow\"": {
+      "main": [
+        [
+          {
+            "node": "Rename Keys",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "triggerCount": 0,
+  "owner": "hello@mondo.surf",
+  "versionId": "6cfa48db-ea08-4423-ade2-7d37a4b17994"
+}

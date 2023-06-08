@@ -28,16 +28,14 @@
       ]
     },
     {
-      "parameters": {
-        "options": {}
-      },
-      "id": "1a4ab229-8dde-428b-8d82-b082a7f96277",
-      "name": "Split In Batches",
-      "type": "n8n-nodes-base.splitInBatches",
-      "typeVersion": 2,
+      "parameters": {},
+      "id": "df58dc35-2f32-4bb5-a948-4cb8c7f7e9ce",
+      "name": "Merge",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 2.1,
       "position": [
-        1400,
-        440
+        1420,
+        460
       ]
     }
   ],
@@ -57,7 +55,7 @@
       "main": [
         [
           {
-            "node": "Split In Batches",
+            "node": "Merge",
             "type": "main",
             "index": 0
           }
@@ -67,6 +65,6 @@
   },
   "settings": {},
   "triggerCount": 0,
-  "owner": "g.andreini@gmail.com",
-  "versionId": "48f45ea9-7e75-469f-84ec-e80cd85aab51"
+  "owner": "hello@mondo.surf",
+  "versionId": "6ee737d3-fa2a-4c66-a4d6-d9a3d7e423df"
 }
