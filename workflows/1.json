@@ -26,6 +26,19 @@
         1180,
         440
       ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "1a4ab229-8dde-428b-8d82-b082a7f96277",
+      "name": "Split In Batches",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 2,
+      "position": [
+        1400,
+        440
+      ]
     }
   ],
   "connections": {
@@ -39,10 +52,21 @@
           }
         ]
       ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Split In Batches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {},
   "triggerCount": 0,
   "owner": "g.andreini@gmail.com",
-  "versionId": "311e5fe2-342d-466d-bc90-5f01bcbe2c8f"
+  "versionId": "48f45ea9-7e75-469f-84ec-e80cd85aab51"
 }
